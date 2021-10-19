@@ -129,7 +129,20 @@
                     </div>
 
                     <div class="header__search">
-                        <input type="text" placeholder="Enter to find product" class="header__search-input">
+                        <div class="header__search-input-wrap">
+                            <input type="text" placeholder="Enter to find product" class="header__search-input">
+                            <div class="header_search-history">
+                                <h3 class="header_search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header_search-history-list">
+                                    <li class="header_search-history-item">
+                                        <a href="">Kem dưỡng da em dưỡng da em dưỡng da em dưỡng da em dưỡng da em dưỡng da em dưỡng da em dưỡng da</a>
+                                    </li>
+                                    <li class="header_search-history-item">
+                                        <a href="">Kem trị mụn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-selection">
                             <span class="header__search-selection-label">Trong shop</span>
                             <i class="header__search-selection-icon fas fa-chevron-down"></i>
@@ -150,7 +163,13 @@
                     </div>
 
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./assets/images/no-cart.png" alt="" class="header__cart-list-img-no-cart">
+                                <span class="header__cart-list-msg-no-cart">Chưa Có Sản Phẩm</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
