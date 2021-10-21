@@ -33,8 +33,22 @@ html {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 
+.col {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-2 {
+    width: 16.66667%;
+}
+
+.col-10 {
+    width: 83.33333%;
+}
 
 /* animation */
 
@@ -89,7 +103,7 @@ html {
 }
 
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     font-size: 1.5rem;
     border: none;
@@ -99,7 +113,7 @@ html {
     color: var(--text-color);
     background-color: transparent;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -125,12 +139,83 @@ html {
     padding: 0 8px;
 }
 
+/* Selection */
+
+.select-input {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    padding: 12px;
+    position: relative;
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.05);
+}
 
 
+.select-input__label {
+    font-size: 1.4rem;
+}
 
+.select-input:hover .select-input__list {
+    display: block;
+}
 
+.select-input__icon {
+    font-size: 1.2rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
 
+.select-input__list {
+    border-radius: 2px;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    background-color: var(--white-color);
+    width: 200px;
+    display: none;
+    box-shadow: 0 1px 3.125rem rgba(0,0,0, 0.05);
+}
 
+.select-input__list::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+
+.select-input__link {
+    display: block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+.select-input__item:first-child .select-input__link {
+    padding: 20px 16px 10px 16px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.select-input__item:last-child .select-input__link {
+    padding: 10px 16px 20px 16px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
 
 
 
