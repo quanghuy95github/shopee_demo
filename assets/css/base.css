@@ -50,6 +50,10 @@ html {
     width: 83.33333%;
 }
 
+.col-2-5 {
+    width: 20%;
+}
+
 /* animation */
 
 @keyframes fadeIn {
