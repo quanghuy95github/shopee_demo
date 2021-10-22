@@ -1024,10 +1024,6 @@
 
 /*product item*/
 
-.home-product {
-    margin-bottom: 10px;
-}
-
 .home-product-item {
     background-color: var(--white-color);
     margin-top: 10px;
@@ -1076,8 +1072,8 @@
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    height: 1.5rem;
-    line-height: 1.5rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
 }
 
 .home-product-item__price-old{
@@ -1231,7 +1227,9 @@
 }
 
 
-
+.home-product__pagination {
+    margin: 40px auto 160px auto;
+}
 
 
 

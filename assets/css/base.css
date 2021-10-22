@@ -223,6 +223,51 @@ html {
     border-bottom-right-radius: 2px;
 }
 
+/*pagination*/
+
+.pagination {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item {
+    margin: 0 15px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.pagination-item--active:hover .pagination-item__link {
+    opacity: 0.9;
+}
+
+.pagination-item__link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgba(0,0,0,0.4);
+    height: 3rem;
+    line-height: 3rem;
+    min-width: 4rem;
+    display: block;
+    border-radius: 2px;
+}
+
+.pagination-item__icon {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
 
 
 
