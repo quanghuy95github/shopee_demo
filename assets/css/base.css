@@ -263,17 +263,82 @@ html {
     font-size: 1.6rem;
 }
 
+/*footer*/
+.footer {
+    border-top: 4px solid #ee4d2d;
+}
 
+.footer__heading {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 40px 0 20px;
+    color: rgba(0,0,0,0.54);
+    font-weight: 700;
+}
 
+.footer-list {
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+}
 
+.footer-item {
+    margin-bottom: 12px;
+}
 
+.footer-item__link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #737373;
+    font-weight: 400;
+}
 
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
 
+.footer-item__icon {
+    font-size: 1.6rem;
+    position: relative;
+    bottom: -2px;
+    margin-right: 8px;
+}
 
+.footer__download {
+    display: flex;
+}
 
+.footer__download-qr {
+    height: 86px;
+    object-fit: contain;
+    border: 1px solid rgba(0,0,0,.09);
+    margin-right: 15px;
+}
 
+.footer__download-app {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
 
+.footer__download-app-link {
+    text-decoration: none;
+}
 
+.footer__download-app-img {
+    width: 80px;
+}
+
+.footer__bottom {
+    background-color: #f5f5f5;
+}
+
+.footer__text {
+    font-size: 1.2rem;
+    color: #000000a6;
+    flex: 1;
+    text-align: center;
+}
 
 
 
